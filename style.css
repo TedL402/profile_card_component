@@ -1,0 +1,117 @@
+:root{
+    --clr-primary-dark-cyan: hsl(185, 75%, 39%);
+    --clr-primary-very-dark-desaturated: hsl(229, 23%, 23%);
+    --clr-primary-dark-grayish-blue: hsl(227, 10%, 46%);
+    --clr-neutral-dark-gray: hsl(0, 0%, 59%);
+    --clr-fontsize: 18px;
+}
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  html{
+    max-height:100%;
+  }
+  body{
+    max-height:100%;
+  }
+
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    font-family: 'Kumbh Sans', sans-serif;
+    display:grid;
+    place-content: center;
+    font-weight: 400;
+    background-color:var(--clr-primary-dark-cyan);
+    color:var(--clr-neutral-dark-gray);
+    position:relative;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img {
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+  section{
+    background-color:white;
+    display:grid;
+    place-items:center ;
+    text-align: center;
+    border-radius: 1rem;
+    overflow: hidden;
+    position:relative;
+  }
+  hr{
+    width:100%;
+    color:var(--clr-neutral-dark-gray);
+    opacity: .1;
+  }
+  span{
+    font-weight:700;
+    font-size:1.25rem;
+    color:var(--clr-primary-very-dark-desaturated);
+  }
+  .middle{
+    padding:1.5rem;
+    max-height: 145px;
+    transform: translateY(-50%);
+  }
+  .stat{
+    display:flex;
+    width:100%;
+    justify-content: space-around;
+    padding:1rem 2rem;
+  }
+  .victor{
+    position:relative;
+    border-radius: 50%;
+    padding-bottom:1rem;
+}
+.top{
+    position:absolute;
+    top:0;
+    left:0;
+    transform: translate(-50%,-50%);
+}
+.bottom{
+    position:absolute;
+    right:0;
+    bottom:0;
+    transform: translate(50%,50%);
+
+
+}
